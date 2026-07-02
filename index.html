@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Disease Prediction</title>
+<style>
+    body{
+        font-family: arial,sans-serif;
+        background: linear-gradient(to right, #89952d, #00f2f2)
+        
+    }
+    .container{
+        width:600px;
+        margin:50px auto;
+        background: rgb(28, 114, 60);
+        padding:30px;
+        box-shadow:0px 0px 20px rgba(0,0,0,0.2);
+    }
+    h1{
+        text-align:center;
+        color:#333;
+
+    }
+    .select{
+        width:100px;
+        padding:10px;
+        font-size:16px;
+        border-radius:8px;
+    }
+    .btn{
+        display:block;
+        width:100%;
+        
+        
+        
+
+    }
+    .btn:hover{
+        background:#005b63
+        
+    
+    }
+    p{
+        text-align:center;
+        color:grey;
+    }
+    
+</style>
+</head>
+
+<body>
+
+<h1>Symptoms Based Disease Prediction</h1>
+<p>Select one or more symptoms and click Predict Disease</p>
+
+<form action="/predict" method="POST">
+
+<select name="symptoms" multiple size="15" style="display:block; margin:auto; width:300px; height:250px; background-color:yellow">
+
+{% for symptom in symptoms %}
+
+<option value="{{ symptom }}">
+{{ symptom }}
+</option>
+
+{% endfor %}
+
+</select>
+
+<br><br>
+
+<input type="submit" value="Predict Disease" style="display:block; margin:auto; width:200px; height:40px; background-color:lightblue">
+
+</form>
+</div>
+</body>
+</html>

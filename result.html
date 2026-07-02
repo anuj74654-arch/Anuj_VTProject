@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Prediction Result</title>
+</head>
+
+<body>
+
+<h1>Predicted Disease : {{ disease }}</h1>
+<p>
+    {% for dis in diseases %}
+    <span>{{ dis }}</span>
+    {% endfor %}
+</p>
+
+<h2>Prediction Accuracy : {{ accuracy }} %</h2>
+
+<hr>
+
+<h2>Selected Symptoms: </h2>
+<p>
+    {% for symptom in selected_symptoms %}
+    <span>{{ symptom }}</span>
+    {% endfor %}
+</p>
+
+<hr>
+
+<h2>Description</h2>
+
+{% for row in desc.iterrows() %}
+<p>{{ row[1]['Description'] }}</p>
+{% endfor %}
+
+<hr>
+
+<h2>Medications</h2>
+
+{% for row in med.iterrows() %}
+<ul>
+<li>{{ row[1]['Medication'] }}</li>
+</ul>
+{% endfor %}
+
+<hr>
+
+<h2>Precautions</h2>
+
+{% for row in pre.iterrows() %}
+<ul>
+<li>{{ row[1]['Precaution_1'] }}</li>
+<li>{{ row[1]['Precaution_2'] }}</li>
+<li>{{ row[1]['Precaution_3'] }}</li>
+<li>{{ row[1]['Precaution_4'] }}</li>
+</ul>
+{% endfor %}
+
+<hr>
+
+<h2>Diet Plan</h2>
+
+{% for row in diet_plan.iterrows() %}
+<p>{{ row[1]['Diet'] }}</p>
+{% endfor %}
+
+<hr>
+
+<h2>Workouts</h2>
+
+{% for row in work.iterrows() %}
+<p>{{ row[1]['Workouts'] }}</p>
+{% endfor %}
+
+<br>
+
+<a href="/">Predict Again</a>
+
+</body>
+</html>

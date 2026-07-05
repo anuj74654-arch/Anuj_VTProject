@@ -1,6 +1,6 @@
 # Anuj_VTProject
 
-# Symptom-Based Disease Prediction System
+# Symptom-Based Disease Predictor And Report Analyzer
 
 ## Project Overview
 This is a Machine Learning-based web application that predicts the most probable disease based on symptoms entered by the user. The system uses the Random Forest algorithm to generate predictions and also provides disease description, medications, precautions, diet suggestions, and workout recommendations.

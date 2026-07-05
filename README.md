@@ -15,6 +15,16 @@ This is a Machine Learning-based web application that predicts the most probable
 - Suggests workout plans.
 - Simple and user-friendly web interface.
 
+## Technologies Used
+- Python
+- Flask
+- HTML
+- NumPy
+- Pandas
+- Pickle
+- Random Forest
+- CSV Dataset
+
 # How To Run
 1. Download or Clone the repository.
 2. Install the required libraries.

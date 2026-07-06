@@ -38,9 +38,6 @@ This is a Machine Learning-based web application that predicts the most probable
 - Integrate with cloud databases.
 - Develop a mobile application.
 
-# Project PPT Presentation
-[click Show to open PPT](https://docs.google.com/presentation/d/1MFyGzW3c-xu2Z7PponO_2VaqVZEHbw1L/edit?usp=sharing&ouid=107017512691682156155&rtpof=true&sd=true)
-
 # Project Demo Video
 [Watch the Demo Video](https://drive.google.com/file/d/1SF2BOMPQZjaV8VISU4mWX2oYAmRph7jc/view?usp=sharing)
 

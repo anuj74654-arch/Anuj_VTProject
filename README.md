@@ -1,5 +1,3 @@
-# Anuj_VTProject
-
 # Symptom-Based Disease Predictor And Report Analyzer
 
 ## Project Overview
